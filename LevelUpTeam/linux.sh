@@ -18,7 +18,21 @@ echo "My IP address is:"
 echo "-----------------------------"
 sleep 2
 curl ifconfig.me
-
-add a new line
-add anoter line
-add a test env
+echo "-----------------------------"
+echo "I like it when the weather is ok"
+sleep 3
+echo "-----------------------------"
+sleep 2
+echo "-----------------------------"
+sleep 2
+echo "What's your favorite color? "
+read text1
+echo "What's your best friends favorite color? "
+read text2
+	if test $text1 != $text2; then
+		echo "I guess opposites attracts opposites."
+	else 
+		echo "You two think alike"
+	fi
+exit 0
+echo "This is the last line."
